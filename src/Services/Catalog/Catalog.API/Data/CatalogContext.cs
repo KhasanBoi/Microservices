@@ -13,6 +13,7 @@ namespace Catalog.API.Data
             var mongoClient = new MongoClient(mongodbSettings.Value.ConnectionString);
             var mongoDatabase = mongoClient.GetDatabase(mongodbSettings.Value.DatabaseName);
             Products = mongoDatabase.GetCollection<Product>(mongodbSettings.Value.CollectionName);
+            CatalogContextSeed.SeedData(Products);
         }
 
         public IMongoCollection<Product> Products { get; }
