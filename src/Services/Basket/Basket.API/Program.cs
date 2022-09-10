@@ -30,3 +30,10 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+
+
+
+//volumes:
+//- ${ APPDATA}/ Microsoft / UserSecrets:/ root /.microsoft / usersecrets:ro
+//- ${ APPDATA}/ ASP.NET / Https:/ root /.aspnet / https:ro
