@@ -24,4 +24,4 @@ services:
 
 volumes:
   mongo_data:
-  portainer-data:
+  portainer_data:
